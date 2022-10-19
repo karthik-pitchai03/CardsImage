@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PH_PhotoViewCell" customModule="PhantomSol" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ide-cZ-tGC">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cel-Vy-BtY">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="220.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Placeholder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AW-3B-LS8">
+                                <rect key="frame" x="12" y="232.5" width="176" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNU-lY-797">
+                                <rect key="frame" x="142.5" y="261" width="49.5" height="31"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system" title=" "/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4AW-3B-LS8" firstAttribute="top" secondItem="cel-Vy-BtY" secondAttribute="bottom" constant="12" id="145-1I-BMA"/>
+                            <constraint firstItem="cel-Vy-BtY" firstAttribute="top" secondItem="Ide-cZ-tGC" secondAttribute="top" id="17U-RN-pIk"/>
+                            <constraint firstItem="cel-Vy-BtY" firstAttribute="leading" secondItem="Ide-cZ-tGC" secondAttribute="leading" id="3mo-wC-suJ"/>
+                            <constraint firstItem="pNU-lY-797" firstAttribute="top" secondItem="4AW-3B-LS8" secondAttribute="bottom" constant="12" id="6tz-dj-kgC"/>
+                            <constraint firstAttribute="trailing" secondItem="4AW-3B-LS8" secondAttribute="trailing" constant="12" id="8rc-l6-ut6"/>
+                            <constraint firstAttribute="height" constant="300" id="Kfv-uO-oUs"/>
+                            <constraint firstAttribute="width" constant="200" id="WZv-QC-lB3"/>
+                            <constraint firstAttribute="bottom" secondItem="pNU-lY-797" secondAttribute="bottom" constant="8" id="a0L-da-rr1"/>
+                            <constraint firstAttribute="trailing" secondItem="cel-Vy-BtY" secondAttribute="trailing" id="gym-7A-2OO"/>
+                            <constraint firstItem="4AW-3B-LS8" firstAttribute="leading" secondItem="Ide-cZ-tGC" secondAttribute="leading" constant="12" id="jn7-ih-lYc"/>
+                            <constraint firstAttribute="trailing" secondItem="pNU-lY-797" secondAttribute="trailing" constant="8" id="qsC-C8-2mL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ide-cZ-tGC" secondAttribute="bottom" id="J8T-9p-EUw"/>
+                <constraint firstAttribute="trailing" secondItem="Ide-cZ-tGC" secondAttribute="trailing" id="NnM-Xc-YMK"/>
+                <constraint firstItem="Ide-cZ-tGC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ciC-RZ-CCj"/>
+                <constraint firstItem="Ide-cZ-tGC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yTp-uk-YSw"/>
+            </constraints>
+            <size key="customSize" width="200" height="300"/>
+            <connections>
+                <outlet property="PH_BackgroundVw" destination="Ide-cZ-tGC" id="nfZ-ye-P5I"/>
+                <outlet property="PH_ImgVw" destination="cel-Vy-BtY" id="9RL-Ot-7Fq"/>
+                <outlet property="PH_Placeholder" destination="4AW-3B-LS8" id="dpi-Ts-Z6I"/>
+            </connections>
+            <point key="canvasLocation" x="246.37681159420291" y="30.133928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
